@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CyberStarter</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/x-icon" href="pictures/favicon.ico">
+  <script src="cyber_starter.js"></script>
+</head>
+
+
+<body>
+  <div class="page-top">
+    <img class="logo" src="pictures/logo.png" alt="Bulllogo" href="cyber_starter.html">
+    <h1 class="org">CyberBull</h1>
+
+    <ul>
+      <li> <a href="#Home-Page">Home</a></li>
+      <li> <a href="#my-skills">My Skills </a></li>
+      <li> <a href="#Resources">Projects and Papers </a></li>
+      <li> <a href="#contact-me">Contact Me </a></li>
+    </ul>
+  </div>
+
+  <div id="Home-Page" class="Home-Page">
+    <div class="my-profile">
+      <img class="my-photo" src="pictures/my_pic.jpg" alt="my_photo">
+      <div class="intro">
+        <h3 class="whoami"> WHOAMI </h3>
+        <h3 class="position"> Anish Niure | Cybersecurity Practitioner | CyberBull </h3>
+        <h3 class="whoami"> Get-Character </h3>
+        <h3 class="character"> Perseverance | Patience | Diligence </h3>
+        <p> A Computer Systems Graduate who is continuously brodening his horizon in digital field. </p>
+        <p><button class="button" onclick="taketomyresume()"> More About Me! </button></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="my-skills" class="my-skills">
+    <h2 class="my-skills-titile"> My Skills </h2>
+    <p class="skill-info">I posess a lot of Skills in Technical field. Bachelors of Computer Systems from TAFE college
+      in Australia, provides real and pratical Knowledge in Cyber field.
+      Apart from that I have done many other Self Study and Training from which I posess following foundational Skills.
+    </p>
+    <div class="skill-card">
+      <img id="cyberSecurityImage" class="skillImage" src="pictures/cyber-security.png" alt="cybersecurityImage">
+      <!-- <a href="https://www.flaticon.com/free-icons/information-security" title="information security icons">Information security icons created by zero_wing - Flaticon</a> -->
+
+      <h3> CyberSecurity </h3>
+      <p> I have expertise in CyberSecurity field. I have achieved <b> ComptiA Security+ </b> Certification, which
+        provides the foundational understanding of Attacks, Threats and Vulnerabilities, Architecture and Design,
+        Implementation, Operations and Incident Response, Governance, Risk and Compliance in Digital field. I am skilled
+        to use Vulnerability
+        Scanning Tools, SIEM and SOAR Technologies, Firewalls, IDS, IPS and other.
+        .</p>
+    </div>
+    <div class="skill-card">
+      <img id="networkingImage" class="skillImage" src="pictures/network.png" alt="networkingImage">
+      <!--<a href="https://www.flaticon.com/free-icons/monitor" title="monitor icons">Monitor icons created by srip - Flaticon</a> -->
+      <h3> Networking </h3>
+      <p> Congfiguring, Implementing and troubleshooting basic and Enterprise Network Architecture, with high
+        understanding of
+        Routing, Switching, Ports and Protocols, IP Addresses, ACLs, and Servers. I have completed <b>CCNAv7: Enterprise
+          Networking, Security, and Automation</b>,
+        <b>CCNAv7: Switching, Routing, and Wireless Essentials</b>. I have broad skill of Configuring and Securing cisco
+        ASA firewall.
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <img id="operatingsystemImage" class="skillImage" src="pictures/operating-system.png" alt="operatingsystemImage">
+      <!--<a href="https://www.flaticon.com/free-icons/system" title="system icons">System icons created by Superarticons - Flaticon</a> -->
+      <h3> Operating Systems </h3>
+      <p> I am Expertise in both Windows and Linux operating Systems, with advance knowledge of windows server 2019 with
+        configuration and management of every roles and features. My detail understanding of
+        compute, Network and Storage infrastructure makes myself capable of running backup servers, FTP, DNS, DHCP and
+        webservers in any Environment.
+      </p>
+    </div>
+
+    <div class="skill-card" id="programming-field">
+      <img id="programmingImage" class="skillImage" src="pictures/code.png" alt="programmingImage">
+      <!-- <a href="https://www.flaticon.com/free-icons/code" title="code icons">Code icons created by Muhammad Ali - Flaticon</a> -->
+      <h3> Programming and Scripting</h3>
+      <p> I am confident to use Python, bash script and basic knowledge of Windows powershell. I am confident to develop
+        web application using html, CSS, JavaScript, PHP and SQL database.</p>
+    </div>
+
+    <div id="view-my-resume" class="view-my-resume">
+      <p class="some_space"> Want to know more about me. Please view my resume by clicking the following button.</p>
+      <p><button id="my-resume" class="button" onclick="viewdocument('./Documents/myresume.pdf')"> My Resume </button></p>
+    </div>
+  </div>
+
+
+
+  <hr>
+  <div id="Resources" class="Resources">
+    <h2 class="my-skills-titile"> Projects and Papers </h2>
+    <p class="skill-info">Following are non-exhastive list of some Projects and Papers, I have written. If you are
+      interested in any of the following topics, feel free to look!</p>
+    <div class="column">
+      <div class="Resources-card">
+        <img class="documentImage" src="pictures/ThreatDetectionLab.png" alt="CyberDetectionLab" style="width:100%">
+        <div class="container">
+          <h2>Threat Detection Lab</h2>
+          <p>Enterprise Network Architecture consisting of Production, Defence, SOC environment to detect the external
+            Threats and monitor traffic'.</p>
+
+        </div>
+        <div id="buttondiv">
+          <p><button id="resource_btn" class="button" onclick="viewdocument('./Documents/threatDetectionLab.pdf')"> View
+              Document </button></p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="column">
+      <div class="Resources-card">
+        <img class="documentImage" src="pictures/imgsystemhardening.png" alt="Penetration Testing and System Hardening"
+          style="width:100%">
+        <div class="container">
+          <h2>Penetration Testing and System Hardening</h2>
+          <p>Know more about Methodologies of vulnerability Scanning and Hardening Systems.</p>
+
+        </div>
+        <div class="buttondiv">
+          <p><button class="button" onclick="viewdocument('./Documents/systemHardening.pdf')"> View Document </button></p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="column">
+      <div class="Resources-card">
+        <img class="documentImage" src="pictures/Active_Directory1.png" alt="Active Directory" style="width:100%">
+        <div class="container">
+          <h2>Active Directory</h2>
+          <p>This document provides basic understanding of Microsoft Active Directory.</p>
+
+        </div>
+        <div class="buttondiv">
+          <p><button class="button" onclick="viewdocument('./Documents/activeDirectoryPart.pdf')"> View Document
+            </button></p>
+
+        </div>
+      </div>
+    </div>
+    <p><button id="see-more" class="button" onclick="changeDisplaytoblock()"> See More </button></p>
+
+    <div id="hiddenResources" class="hiddenResources">
+      <div class="column">
+        <div class="Resources-card">
+          <img class="documentImage" src="pictures/imgvpn.png" alt="Network Architecture" style="width:100%">
+          <div class="container">
+            <h2>Secure Network Architecture and Site-to-Site VPN</h2>
+            <p>Securing Edge Routers and creating Tunnel between different edge routers in different location.</p>
+
+          </div>
+          <div class="buttondiv">
+            <p><button class="button" onclick="viewdocument('./Documents/configuringSitetoSiteVPN.pdf')"> View Document
+              </button></p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="column">
+        <div class="Resources-card">
+          <img class="documentImage" src="pictures/imgcyberstrategy.png" alt="Situation and Security policies for SMEs"
+            style="width:100%">
+          <div class="container">
+            <h2>Situation and Security policies for SMEs</h2>
+            <p>What is the current situation of Small and Medium Enterprises in Cybersecurity field?</p>
+
+          </div>
+          <div class="buttondiv">
+            <p><button class="button" onclick="viewdocument('./Documents/CyberSecurityDesign.pdf')"> View Document </button>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="Resources-card">
+          <img class="documentImage" src="pictures/quantumCryptography.png" alt="Quantum Cryptography" style="width:100%">
+          <div class="container">
+            <h2>Quantum Cryptography</h2>
+            <p>Will our data still be safe with modern cryptography? What is quantuam Cryptography?</p>
+
+          </div>
+          <div class="buttondiv">
+            <p><button class="button" onclick="viewdocument('./Documents/quantumCryptography.pdf')"> View Document
+              </button></p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="Resources-card">
+          <img class="documentImage" src="pictures/WEB 3.0.png" alt="WEB3.0" style="width:100%">
+          <div class="container">
+            <h2>Web 3.0</h2>
+            <p>What is Web? What is concept of WEB 3.0? View its advantages and Disadvantages.</p>
+          </div>
+
+          <div class="buttondiv">
+            <p><button class="button" onclick="viewdocument('./Documents/web3.pdf')"> View Document </button></p>
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+      <p><button id="see-less" class="button" onclick="changeDisplaytohidden()"> See Less </button></p>
+    </div>
+  </div>
+  </hr>
+  </div>
+
+
+  <hr>
+  <div id="contact-me" class="contact-me">
+    <h2 class="my-skills-titile"> Get In Touch</h2>
+    <h3>Thank you for visiting my website.</h3>
+    <p> Please feel free to reach me out in Linkedin or contact me via Email.</p>
+    <a class="btn" href="mailto:anish.niure22@gmail.com">CONTACT ME</a>
+  </div>
+  </hr>
+  <div class="bottom-container">
+    <a href="https://www.linkedin.com/in/anish-niure/" target="_blank"> LinkedIn </a>
+    <p class="copyrightMessage"> &copy; 2023 Anish Niure </p>
+  </div>
+  </div>
+
+</body>
+
+</html>
